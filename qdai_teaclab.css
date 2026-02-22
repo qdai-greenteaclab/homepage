@@ -37,6 +37,9 @@ body {
     color: #ffffff;
     margin: 0;
 }
+ul{
+    list-style: none;
+}
 aside {/* サイドバー */
   position: fixed;
   top: 80px;
@@ -54,8 +57,8 @@ aside {/* サイドバー */
     color: #8e0d0d;
 }
 #sns{
-    display: flex;
     list-style: none;
+    display: flex;
 }
 #x{
     margin:0 30px 0 30px;
@@ -75,16 +78,50 @@ aside {/* サイドバー */
 #note{
     margin:0 30px 0 30px;
     width: 100px;
-    height: 100px; 
+    height: 100px;
+}
+.space{
+    height: 20vw;
 }
 footer{
     align-items:center;
     background: #0d6828;
-    position: fixed;
+    position: relative;
     display: flex;
     bottom: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 150px;
-    margin: 0;
+}
+@media (max-width: 600px){/*スマホ用*/
+aside {/* サイドバー */
+  position: relative;
+}
+.space{
+    height: 20vh;
+}
+#sns{
+    list-style: none;
+    display: flex;
+}
+#x{
+    margin:0 6vw 0 0;
+    width: 15vw;
+    height: 15vw;
+}
+#instagram{
+    margin:0 6vw 0 0;
+    width: 15vw;
+    height: 15vw;
+}
+#radio{
+    margin:0 6vw 0 0;
+    width: 15vw;
+    height: 15vw;
+}    
+#note{
+    margin:0 6vw 0 0;
+    width: 15vw;
+    height: 15vw;
+}
 }
